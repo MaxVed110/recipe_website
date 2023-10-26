@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} <p>Название страницы</p> {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/AC.ico' %}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src= "{% static 'js/script.js' %}" defer></script>
+</head>
+
+<body class="color-change-2x">
+<header class="header center">
+    <div class="left_item">
+        <a class="logo" href="{% url 'index' %}">Рецептикус</a>
+    </div>
+
+    <div class="center_item">
+        <a class="link l_h" href="{% url 'all_recipe' %}">Все рецепты</a>
+        <a class="link l_h" href="{% url 'add_recipe' %}">Добавить рецепт</a>
+    </div>
+
+</header>
+
+<section class="introduction center">
+    {% block content %}
+    <p>Скоро тут появится текст...</p>
+    {% endblock %}
+
+</section>
+
+<footer class="footer center">
+    <div class="protect_data">
+        <p class="f_c">© 2023 Рецептикус Software. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+
+</html>

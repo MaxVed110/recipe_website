@@ -1,0 +1,33 @@
+{% extends 'recipeapp/base.html' %}
+
+{% block title %} {{title}} {% endblock %}
+
+
+{% block content %}
+
+<h1 class="title_index">{{ recipe.title }}</h1>
+<div class="container center">
+    <div class="base_preview">
+        <img class="img_preview img_base" src="{{ recipe.image.url }}"/>
+        <div>
+            <p class="desc_preview base_pr">{{ recipe.description }}</p>
+            <p class="desc_preview base_pr author">Время приготовления: {{ recipe.time_cook }}, автор: {{ recipe.author }}</p>
+        </div>
+    </div>
+    <div class="base_description">
+        <p class="subtitle">Ингридиенты:</p>
+        <ul>
+            {% for ind in ingredients %}
+            <li class="base_ingr">{{ ind }}</li>
+            {% endfor %}
+        </ul>
+        <ol>
+            {% for step in steps %}
+            <li class="base_steps">{{ step }}</li>
+            {% endfor %}
+        </ol>
+        <p class="category">Категории: {% for cat in list_cat %} {% for subcat in cat %} {{ subcat }} {% endfor %} {% endfor %}</p>
+    </div>
+</div>
+
+{% endblock %}

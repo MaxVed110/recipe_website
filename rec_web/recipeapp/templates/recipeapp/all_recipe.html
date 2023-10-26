@@ -1,0 +1,20 @@
+{% extends 'recipeapp/base.html' %}
+
+{% block title %} {{title}} {% endblock %}
+
+{% block content %}
+
+<h1 class="title_index">Все рецепты</h1>
+<div class="container center">
+    {% for item in list_rec %}
+    <div class="preview">
+        <div class="prev_txt">
+            <a href="{% url 'base_rec' item.id %}" class="rec_title">{{ item.title }}</a>
+            <p class="desc_preview index_prew">{{ item.description }}</p>
+        </div>
+        <img class="img_preview" src="{{ item.image.url }}">
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

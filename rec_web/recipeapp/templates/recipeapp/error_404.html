@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/error_404.css">
+    <link rel="shortcut icon" href="./img/AC.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+    <title>Amber Corp</title>
+</head>
+
+<body class="color-change-2x">
+    <header class="header center">
+        <div class="left_item">
+            <img class="logo_img" src="./img/logo.png" alt="logo_placeholder">
+            <a class="logo" href="./index.html">AmberCorp</a>
+        </div>
+
+        <div class="center_item">
+            <a class="link l_h" href="./index.html#about_program">О программе</a>
+            <a class="link l_h" href="./install.html">Установка</a>
+            <a class="link l_h" href="./hou_to_use.html">Руководство</a>
+            <a class="link l_h" href="./about_us.html">О нас</a>
+        </div>
+
+        <div class="right_item">
+            <div class="container">
+                <button class="button_lang">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="icon-nav-globe" viewBox="0 0 512 512"
+                            style="fill: #fafcff">
+                            <path
+                                d="M256 0c141.67 0 256 114.33 256 256 0 141.67-114.33 256-256 256C114.33 512 0 397.67 0 256 0 114.33 114.33 0 256 0zm67.885 348.16h-135.77c10.985 44.605 29.945 89.21 56.88 133.815 3.644.171 7.314.258 11.005.258 3.69 0 7.362-.09 11.012-.267 26.93-44.602 45.889-89.204 56.873-133.806zm-164.952 0l-109.946.001c28.866 65.529 87.784 114.256 159.82 129.247-23.476-43.084-40.101-86.166-49.874-129.248zm303.727.001l-109.593-.001c-9.76 43.027-26.356 86.055-49.788 129.082 70.935-15.176 130.169-63.788 159.38-129.08zM153.126 194.558H38.208c-5.495 19.502-8.44 40.104-8.44 61.442 0 21.337 2.878 41.939 8.272 61.44h115.086c-3.097-20.48-4.646-40.96-4.646-61.44 0-20.48 1.549-40.96 4.646-61.442zm177.064 0H181.81c-3.362 20.481-5.043 40.962-5.043 61.442 0 20.48 1.68 40.96 5.043 61.44h148.38c3.362-20.48 5.043-40.96 5.043-61.44 0-20.48-1.68-40.96-5.043-61.441zm143.77 0H358.873c3.097 20.481 4.646 40.962 4.646 61.442 0 20.48-1.549 40.96-4.646 61.44h114.919c5.494-19.501 8.44-40.103 8.44-61.44 0-21.338-2.88-41.94-8.274-61.442zm-265.24-159.8l-3.179.702C136.02 51.394 78.116 99.523 49.341 163.837l109.592.003c9.76-43.027 26.356-86.055 49.788-129.082zm47.28-4.99c-3.69 0-7.36.089-11.01.266-26.933 44.603-45.891 89.204-56.875 133.806h135.77c-10.985-44.605-29.944-89.21-56.879-133.814A232.421 232.421 0 00256 29.767zm47.192 4.824l.008.02c23.473 43.075 40.095 86.152 49.867 129.228l109.945-.003C434.146 98.31 375.228 49.582 303.192 34.592z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="active_lang">
+                        ru
+                    </div>
+                </button>
+                <div class="lang_link ">
+                    <a class="lang_item_button" href="#">Русский</a>
+                    <a class="lang_item_button" href="#">English</a>
+                </div>
+            </div>
+            <!-- Иконка лк, линк на авторизацию или лк -->
+            <div class="user">
+                <a class="icon_user" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20px"
+                        viewBox="0 0 448 512">
+                        <path
+                            d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                    </svg></a>
+            </div>
+            <form action="./contact.html">
+                <button class="button_contact link">Связаться с нами</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="authorization_block center not_visible">
+        <div class="registration_block not_visible">
+            <a class="close_box" href="index.html"><img class="cl1" src="./img/close_blue.png" alt="close_blue"></a>
+            <h1 class="reg_title">Регистрация в личном кабинете</h1>
+            <p class="reg_txt"> <span class="reg_txt2">Регистрация позволит Вам получать специальные предложения
+                    AmberCorp, при желании
+                    — подписаться на новостные рассылки AmberCorp. </span><br><br>
+
+                Пожалуйста, укажите полные и достоверные данные; это позволит предоставлять Вам наиболее подходящую
+                информацию. AmberCorp гарантирует конфиденциальность Ваших данных: мы не разглашаем их и никому не
+                передаём.
+            </p>
+            <form class="rf1" action="./personal_account.html" method="post">
+                <div class="input_greed">
+                    <input class="input_field f2" type="text" name="first_name" placeholder="Имя" id="">
+                    <input class="input_field f2" type="email" name="email" placeholder="Email" id="" required>
+                    <input class="input_field f2" type="text" name="second_name" placeholder="Фамилия" id="">
+                    <input class="input_field f2" type="password" name="password" placeholder="Пароль" id="" required>
+                    <input class="input_field f2" type="text" name="nick_name" placeholder="Логин" id="" required>
+                    <input class="input_field f2" type="password" name="password" placeholder="Повторите пароль" id=""
+                        required>
+                    <p><input class="checkbox_field" type="checkbox" name="agreement" required>Я даю <a href="#"
+                            class="forgot">согласие на
+                            обработку персональных данных</a></p>
+                </div>
+                <button class="button_registration_submit" type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+        <div class="login_block">
+            <a class="close_box" href="index.html"><img class="img_close" src="./img/close_blue.png"
+                    alt="close_blue"></a>
+            <h1 class="reg_title">Авторизация в личном кабинете</h1>
+            <!-- Форма авторизации при наличии аккаунта -->
+            <form class="reg_form" action="./personal_account.html" method="post">
+                <input class="input_field" type="email" name="login" placeholder="Email" id=""><br>
+                <input class="input_field f1" type="password" name="password" placeholder="Пароль" id=""><br>
+                <p style="margin-bottom: 20px;"><a class="forgot" href="#">Восстановить пароль</a><a
+                        class="button_reg forgot_pos" href="#">Зарегистрироваться</a></p>
+
+                <!-- Линк необходимо организовать через сторонние ресурсы
+                Убрать заглушки -->
+                <div class="out_link">
+                    <a href="#">Войти через Google</a><br>
+                    <a href="#">Войти через Яндекс</a><br>
+                </div>
+
+                <button class="button_auth_submit" type="submit">Войти</button>
+            </form>
+            <!-- заглушка -->
+            <a href=""></a>
+        </div>
+    </div>
+
+    <div class="about_error center">
+        <p class="attention">Ooops...</p>
+        <p class="message">here comes the <span class="message m1">Amber</span><span class="message m2">Bug</span></p>
+        <p class="message_2">эту страницу мы ещё не разработали, попробуйте зайти позже</p>
+        <img class="error_image i1" src="./img/error_image.png" alt="error_image">
+        <img class="error_image i2" src="./img/error_image.png" alt="error_image">
+        <img class="error_image i3" src="./img/error_image.png" alt="error_image">
+        <img class="error_image i4" src="./img/error_image.png" alt="error_image">
+    </div>
+
+    <footer class="footer center">
+        <nav class="menu_tags">
+            <a class="link tags_title" href="./index.html">AmberCorp</a>
+            <div class="l_head">
+                <a class="link tags" href="#about_program">О программе</a>
+                <a class="link tags" href="#install">Установка</a>
+                <a class="link tags" href="#guide">Руководство</a>
+                <a class="link tags" href="./about_us.html">О нас</a>
+            </div>
+            <div class="opt_link">
+                <a class="link tags" href="./more_info.html">База</a>
+                <a class="link f_c" href="./base_algo_list.html">Алгоритм Астар</a>
+                <a class="link f_c" href="./base_algo_list.html">Алгоритм DFS</a>
+                <a class="link f_c" href="./base_algo_list.html">Алгоритм BFS</a>
+            </div>
+            <div class="opt_link">
+                <a class="link f_c" href="./base_algo_list.html">Волновой алгоритм Ли</a>
+                <a class="link f_c" href="./base_algo_list.html">Алгоритм Беллмана-Форда</a>
+                <a class="link f_c" href="./base_algo_list.html">Алгоритм Дейкстры</a>
+                <a class="link f_c" href="./base_algo_list.html">Эвристика</a>
+            </div>
+        </nav>
+
+        <div class="feedback">
+            <form action="./contact.html">
+                <button class="button_contact link f">Связаться с нами</button>
+            </form>
+            <nav>
+                <a href="#"> <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg></a>
+            </nav>
+        </div>
+
+        <div class="protect_data">
+            <div class="language_protect">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="icon-nav-globe" viewBox="0 0 512 512">
+                        <style>
+                            svg {
+                                fill: #fafcff
+                            }
+                        </style>
+                        <path
+                            d="M256 0c141.67 0 256 114.33 256 256 0 141.67-114.33 256-256 256C114.33 512 0 397.67 0 256 0 114.33 114.33 0 256 0zm67.885 348.16h-135.77c10.985 44.605 29.945 89.21 56.88 133.815 3.644.171 7.314.258 11.005.258 3.69 0 7.362-.09 11.012-.267 26.93-44.602 45.889-89.204 56.873-133.806zm-164.952 0l-109.946.001c28.866 65.529 87.784 114.256 159.82 129.247-23.476-43.084-40.101-86.166-49.874-129.248zm303.727.001l-109.593-.001c-9.76 43.027-26.356 86.055-49.788 129.082 70.935-15.176 130.169-63.788 159.38-129.08zM153.126 194.558H38.208c-5.495 19.502-8.44 40.104-8.44 61.442 0 21.337 2.878 41.939 8.272 61.44h115.086c-3.097-20.48-4.646-40.96-4.646-61.44 0-20.48 1.549-40.96 4.646-61.442zm177.064 0H181.81c-3.362 20.481-5.043 40.962-5.043 61.442 0 20.48 1.68 40.96 5.043 61.44h148.38c3.362-20.48 5.043-40.96 5.043-61.44 0-20.48-1.68-40.96-5.043-61.441zm143.77 0H358.873c3.097 20.481 4.646 40.962 4.646 61.442 0 20.48-1.549 40.96-4.646 61.44h114.919c5.494-19.501 8.44-40.103 8.44-61.44 0-21.338-2.88-41.94-8.274-61.442zm-265.24-159.8l-3.179.702C136.02 51.394 78.116 99.523 49.341 163.837l109.592.003c9.76-43.027 26.356-86.055 49.788-129.082zm47.28-4.99c-3.69 0-7.36.089-11.01.266-26.933 44.603-45.891 89.204-56.875 133.806h135.77c-10.985-44.605-29.944-89.21-56.879-133.814A232.421 232.421 0 00256 29.767zm47.192 4.824l.008.02c23.473 43.075 40.095 86.152 49.867 129.228l109.945-.003C434.146 98.31 375.228 49.582 303.192 34.592z">
+                        </path>
+                    </svg>
+                </div>
+                <a class="link f_c" href="#">Русский</a>
+                <a class="link f_c" href="#">English</a>
+            </div>
+            <p class="f_c">© 2023 AmberCorp Software. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
